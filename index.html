@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>https://survey-form.freecodecamp.rocks/</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>  
+      </header>
+      
+      <form id="survey-form" method="post">
+        
+
+        <fieldset class="input-group">
+
+          <legend><label for="name" id="name-label">Name </label></legend>
+
+          <input type="text" id="name" placeholder="Enter your Name" required/>
+
+        </fieldset>
+        
+
+        <fieldset class="input-group">
+
+          <legend><label for="email" id="email-label" >Email </label></legend>
+
+          <input type="email" id="email" placeholder="Enter your Email" required>
+
+        </fieldset>
+        
+
+        <fieldset class="input-group">
+
+          <legend><label for="number" id="number-label">Age(optional)</label></legend>
+
+          <input type="number" id="number" placeholder="Age" min="10" max="100"/>
+
+        </fieldset>
+
+
+        <fieldset class="input-group">
+
+          <legend>Which option best describes your current role?</legend>
+
+          <select id="dropdown">
+
+            <option value="" disabled selected>Select current role</option>
+
+            <option value="1">Student</option>
+
+            <option value="2">Full time Job</option>
+
+            <option value="3">Full time Learner</option>
+
+            <option value="4">Prefer not to say</option>
+
+            <option value="5">Other</option>
+
+          </select>
+
+        </fieldset>
+
+
+        <fieldset class="input-group">
+
+          <legend id="radioQuote">Would you recommend freeCodeCamp to a friend?</legend>
+          <div class="checkers">
+            <input type="radio" name="recommend" id="definitely" value="definitely" checked ><label for="definitely" class="inline labels"> Definitely</label>
+          </div>
+          
+          <div class="checkers">
+            <input type="radio" name="recommend" value="maybe" id="maybe"><label for="maybe" class="inline labels"> Maybe</label>
+          </div>
+          <div class="checkers"> 
+            <input type="radio" name="recommend" value="notsure" id="notsure" ><label for="notsure" class="inline labels"> Not Sure</label>
+          </div>
+          
+        </fieldset>
+
+
+        <fieldset class="input-group">
+
+          <legend id="checkerQuote">What would you like to see improved? (Check all that apply)</legend>
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="frontend" ><label class="inline labels"> Front-end Projects</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="backend" ><label class="inline"> Back-end Projects</label>
+          </div>
+          
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="data" ><label class="inline"> Data Visualization</label>
+          </div>
+          
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="challenges" ><label class="inline"> Challenges</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="opensource" ><label class="inline"> Open Source Community</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="opensource" ><label class="inline"> Gitter help rooms</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="videos" ><label class="inline"> Videos</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="city" ><label class="inline"> City Meetups</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="wiki" ><label class="inline"> Wiki</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="forum" ><label class="inline"> Forum</label>
+          </div>
+
+          <div class="checkers">
+            <input type="checkbox" name="prefer" value="additionalcourses" ><label class="inline"> Additional Courses</label>
+          </div>
+
+        </fieldset>
+
+
+        <fieldset class="input-group">
+
+          <legend>Any comments or suggestions?</legend>
+
+          <textarea id="suggestions" placeholder="Enter your comment here..."></textarea>
+
+        </fieldset>
+
+
+        <input type="submit" value="Submit" id="submit"/>
+
+      </form>
+
+    </div>
+
+  </body>
+
+  
+</html>
